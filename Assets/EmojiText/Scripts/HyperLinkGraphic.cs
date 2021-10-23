@@ -1,32 +1,34 @@
 ﻿using UnityEngine.Events;
-using UnityEngine.UI;
 
-public class HyperLinkGraphic : UnityEngine.UI.Graphic
+namespace UnityEngine.UI
 {
-    protected Button m_Button;
-
-    protected override void Awake()
+    public class HyperLinkGraphic : UnityEngine.UI.Graphic
     {
-        base.Awake();
-        m_Button = gameObject.GetComponent<Button>();
-        if(m_Button == null)
+        protected Button m_Button;
+
+        protected override void Awake()
         {
-            m_Button = gameObject.AddComponent<Button>();
+            base.Awake();
+            m_Button = gameObject.GetComponent<Button>();
+            if (m_Button == null)
+            {
+                m_Button = gameObject.AddComponent<Button>();
+            }
         }
-    }
 
-    public void SetClickEvent(UnityAction callback)
-    {
-        if (!m_Button)
+        public void SetClickEvent(UnityAction callback)
         {
-            return;
+            if (!m_Button)
+            {
+                return;
+            }
+            m_Button.onClick.RemoveAllListeners();
+            m_Button.onClick.AddListener(callback);
         }
-        m_Button.onClick.RemoveAllListeners();
-        m_Button.onClick.AddListener(callback);
-    }
 
-    protected override void OnPopulateMesh(VertexHelper vh)
-    {
-        vh.Clear();
+        protected override void OnPopulateMesh(VertexHelper vh)
+        {
+            vh.Clear();
+        }
     }
 }

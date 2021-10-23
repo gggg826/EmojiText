@@ -2,7 +2,7 @@
 //	Author:zouchunyi
 //	E-mail:zouchunyi@kingsoft.com
 
-Shader "UI/EmojiFont" {
+Shader "UI/RichText" {
 	Properties {
 		[PerRendererData] _MainTex ("Font Texture", 2D) = "white" {}
 		_Color ("Tint", Color) = (1,1,1,1)

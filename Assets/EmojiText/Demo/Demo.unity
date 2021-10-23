@@ -329,7 +329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4caf679af4a496441a022717be6afdbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: ea02a8c7a6993804d9e33066bf140fba, type: 2}
+  m_Material: {fileID: 2100000, guid: e28800765726197419add3af093c7d6b, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
@@ -352,6 +352,7 @@ MonoBehaviour:
   m_Text: "<color=#008957>\u652F\u6301\u8868\u60C5\uFF1A</color> <t=1,kiss>, <t=1,kiss>
     <t=1,kiss> \u548C <color=#00fff0>\u8D85\u94FE\u63A5\uFF1A</color> <t=2,\u7F51\u5740\u662F:www.baidu.com,#003322>
     \n<t=2,www.souhu.comwww.souhu.comwww.souhu.com,#001155>"
+  m_EmojiData: {fileID: 11400000, guid: e1538429a1081e24f98fce2067b23c6e, type: 2}
 --- !u!222 &1204593007
 CanvasRenderer:
   m_ObjectHideFlags: 0
